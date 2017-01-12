@@ -1,10 +1,11 @@
 {
   "name": "debugis",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "visionmedia/debug with support for promises",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "lint": "eslint .",
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,12 @@
   },
   "homepage": "https://github.com/hekar/debugis#readme",
   "dependencies": {
-    "debug": "^2.6.0"
+    "debug": "^2.6.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "mocha": "^3.2.0"
   }
 }

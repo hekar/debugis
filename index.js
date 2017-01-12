@@ -1,19 +1,20 @@
 'use strict';
 
-const debug = require('debug');
+let debug = require('debug');
 
-function promise(name) {
+function promise(debugInstance, name) {
   return function(functionName, data) {
     return function(results) {
-      debug(name)(functionName, ':', { data, results });
+      debugInstance(functionName, ':', { data, results });
       return results;
     };
   };
 }
 
 module.exports = function createDebug(name) {
+  const debugInstance = debug(name);
   return {
-    debug: debug(name),
-    promise: promise(name)
+    debug: debugInstance,
+    promise: promise(debugInstance, name)
   };
 };
