@@ -5,6 +5,8 @@ const debug = require('./')('test');
 const util = require('util');
 const expect = require('chai').expect;
 
+/*globals describe,beforeEach,it */
+
 describe('debugis', () => {
     let statements;
     beforeEach(() => {
@@ -29,7 +31,8 @@ describe('debugis', () => {
                 .then(debug.promise('Hello', {}))
                 .then(() => {
                     expect(statements).to.have.lengthOf(1);
-                    expect(_.first(statements)).to.match(/.*Hello : { data: {}, results: \'resolved\' }$/);
+                    expect(_.first(statements)).to.match(
+                        /.*Hello : { data: {}, results: 'resolved' }$/);
                 });
         });
     });

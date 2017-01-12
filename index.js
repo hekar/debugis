@@ -2,7 +2,7 @@
 
 let debug = require('debug');
 
-function promise(debugInstance, name) {
+function promise(debugInstance) {
   return function(functionName, data) {
     return function(results) {
       debugInstance(functionName, ':', { data, results });
@@ -15,6 +15,6 @@ module.exports = function createDebug(name) {
   const debugInstance = debug(name);
   return {
     debug: debugInstance,
-    promise: promise(debugInstance, name)
+    promise: promise(debugInstance)
   };
 };

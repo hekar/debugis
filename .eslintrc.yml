@@ -8,7 +8,6 @@ rules:
   accessor-pairs: error
   array-bracket-spacing: error
   array-callback-return: error
-  arrow-body-style: error
   arrow-parens: error
   arrow-spacing:
     - error
@@ -35,7 +34,6 @@ rules:
   consistent-this: error
   curly: error
   default-case: error
-  dot-location: error
   dot-notation: error
   eol-last: error
   eqeqeq: error
@@ -50,7 +48,6 @@ rules:
   guard-for-in: error
   handle-callback-err: error
   id-blacklist: error
-  id-length: error
   id-match: error
   indent: 'off'
   init-declarations: 'off'
@@ -106,7 +103,6 @@ rules:
   no-lone-blocks: error
   no-lonely-if: error
   no-loop-func: error
-  no-magic-numbers: error
   no-mixed-operators: error
   no-mixed-requires: error
   no-multi-spaces: error
@@ -184,18 +180,13 @@ rules:
   padded-blocks: 'off'
   prefer-arrow-callback: error
   prefer-const: 'off'
-  prefer-destructuring: error
   prefer-numeric-literals: error
-  prefer-reflect: error
-  prefer-rest-params: error
-  prefer-spread: error
   prefer-template: error
   quote-props: 'off'
   quotes: 'off'
   radix: error
   require-await: error
   require-jsdoc: 'off'
-  rest-spread-spacing: error
   semi: error
   semi-spacing: error
   sort-imports: error
@@ -210,7 +201,6 @@ rules:
     - never
   space-infix-ops: 'off'
   space-unary-ops: error
-  spaced-comment: error
   strict: 'off'
   symbol-description: error
   template-curly-spacing: error
