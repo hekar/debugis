@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '6'
+deploy:
+  provider: npm
+  email: hekark@gmail.com
+  api_key:
+    secure: SoH062h8SGYk7yXp7sUlYLGM4+vM62YjmWpNQHR1LD9SAwGx8xpYNROziHwgD59pgz4ug7NGNa2TUoPDlRci3ftOWsGYEiyIBGo4iPAWBUDos5WLdMbC7wjhmvzuJEfntFLKFJM1iLpyA3M80Ji1xKAuTtbc9mIU26tdLoXU19wr52Hl1KJVfXfqX0A8jvu1zXb7oz1JEev6P0zLJJeudIlizwWllrMikJ0NAwEh2WSPtLeI7YjZeG0lzrPhfewyjcDodP/2jSkJ9vrhd5L7fTlwc1fsqs49A5erI0L3ye5WvTUJh1Qk80KrFAa/UPZl67XWx94NCeApyk1VId8V7M+9HlpmoFIF9P0BrZdm15wHvO9I7eazBcfAa7p486TpDIIP0aBhaUp2zLibm9hBgzmZEx/G1UseQiFja/jo0K6kYomx5f3vhwcUDYrdEL1BjYL6SjKLw5HqTbWbVRZAUtOa3vSJ2IV26Qri51ftPmD6nirJCrnciPiHDbLDqRkBR0YaQH3yIttNAVk//+c0erd6K1tkVuoMoKHdC3bPm55QHNRTPluL2A9gK/6XoQC1ed6tfYN3ZhLtcVj6ZrFBybVNS+lMdn/vpJR+VR3n18VWoMfWwW5aI+1ZczDt8LQJkjWH7f0nhOf+zg+bD6h+6dHFv+wrBWzD0ZZrkbR4jGg=
+  on:
+    tags: true
+    repo: hekar/debugis
