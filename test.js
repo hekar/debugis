@@ -32,7 +32,7 @@ describe('debugis', () => {
                 .then(() => {
                     expect(statements).to.have.lengthOf(1);
                     expect(_.first(statements)).to.match(
-                        /.*Hello : { data: {}, results: 'resolved' }$/);
+                        /.*Hello: { data: {}, results: 'resolved' }$/);
                 });
         });
     });
