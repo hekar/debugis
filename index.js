@@ -5,7 +5,7 @@ let debug = require('debug');
 function promise(debugInstance) {
   return function(functionName, data) {
     return function(results) {
-      debugInstance(functionName, ':', { data, results });
+      debugInstance(`${functionName}: %O`, { data, results });
       return results;
     };
   };
